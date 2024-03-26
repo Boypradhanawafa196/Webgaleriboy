@@ -58,6 +58,9 @@ if ($_SESSION['status'] != 'login') {
             bottom: 0;
             left: 0;
         }
+        .bungkus-download {
+            margin-top : 5px;
+        }
     </style>
 </head>
 
@@ -74,12 +77,6 @@ if ($_SESSION['status'] != 'login') {
                 <a href="album.php" class="nav-link">Album</a>
                 <a href="foto.php" class="nav-link">Foto</a>
             </div>
-            <!-- <form class="d-flex mx-2">
-                <input class="form-control me-2" type="search" placeholder="Search..." aria-label="Search">
-                <button class="btn btn-warning" type="submit">
-                    <i class="fa-solid fa-search"></i>
-                </button>
-            </form> -->
             <a href="../config/aksi_logout.php" class="btn btn-danger m-1">Keluar</a>
         </div>
     </div>
@@ -129,6 +126,9 @@ if ($_SESSION['status'] != 'login') {
                                     <div class="row">
                                         <div class="col-md-8">
                                             <img src="../assets/img/<?php echo $data['lokasifile'] ?>" class="card-img-top" title="<?php echo $data['judulfoto'] ?>">
+                                            <a class="bungkus-download" href="../assets/img/<?php echo $data['lokasifile'] ?>" download>
+                                                <button class="custom-pointer"><i class="fa-solid fa-download text-2xl"></i></button>
+                                            </a>
                                         </div>
                                         <div class="col-md-4">
                                             <div class="m-2">

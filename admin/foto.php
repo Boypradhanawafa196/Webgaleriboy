@@ -146,8 +146,7 @@ if ($_SESSION['status'] != 'login'){
                                                     <label class="form-label">Judul Foto</label>
                                                      <input type="text" name="judulfoto" value="<?php echo $data['judulfoto'] ?>" class="form-control" required>
                                                      <label class="form-label">Deskripsi</label>
-                                                     <textarea class="form-control" name="deskripsifoto"  required>
-                                                        <?php echo $data['deskripsifoto']; ?> </textarea>
+                                                     <textarea class="form-control" name="deskripsifoto" required><?php echo $data['deskripsifoto']; ?> </textarea>
                                                         <label class="form-label">Album</label>
                                                         <select class="form-control" name="albumid">
                                                             <?php 

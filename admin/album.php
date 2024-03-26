@@ -137,8 +137,7 @@ if ($_SESSION['status'] != 'login'){
                                                     <label class="form-label">Nama Album</label>
                                                      <input type="text" name="namaalbum" value="<?php echo $data['namaalbum'] ?>" class="form-control" required>
                                                      <label class="form-label text-decoration-none">Deskripsi</label>
-                                                     <textarea class="form-control" name="deskripsi" required>
-                                                        <?php echo $data['deskripsi']; ?>
+                                                     <textarea class="form-control" name="deskripsi" required><?php echo $data['deskripsi']; ?>
                                                      </textarea>
                                                  
                                                  </div>
